@@ -1,0 +1,12 @@
+April Master ssh -i ~/.ssh/aprilkeypair.pem ec2-user@23.23.19.129
+private ip 10.0.1.113
+public ip 23.23.19.129
+
+April Worker 1 ssh -i ~/.ssh/aprilkeypair.pem ec2-user@54.209.88.228
+private ip 10.0.1.75
+public ip 54.209.88.228
+
+April Worker 2 ssh -i ~/.ssh/aprilkeypair.pem ec2-user@3.84.154.10
+private ip 10.0.1.89
+public ip 3.84.154.10
+
