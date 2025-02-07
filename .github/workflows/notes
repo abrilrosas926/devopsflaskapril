@@ -16,3 +16,15 @@ scp -i "aprilkeypair.pem" aprilkeypair.pem ec2-user@23.23.19.129:~/.ssh
 Access Workernode1 from Master (use public ip)
 ssh -i ~/.ssh/aprilkeypair.pem ec2-user@54.209.88.228
 
+Create file via ansible 
+echo "test file">myfile.txt
+
+Copy txt file from source to dest and other workers
+sudo ansible mynodes -m copy 'src=myfile.txt dest=/tmp' -i inventory.ini
+
+Node-token
+K10e49319289f4d0392f2557f8f27308fc6997cd5a92ce401f8d604836154b6efc5::server:43fba31ff7e839617a8f930fb60b64d6
+
+Day 5 APRILMASTER instance public ip http://54.165.142.6:3000/
+ssh -i "aprilkeypair.pem" ec2-user@ec2-54-165-142-6.compute-1.amazonaws.com
+
